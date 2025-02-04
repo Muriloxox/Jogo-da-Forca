@@ -48,7 +48,7 @@ def senha():
         email = checar_email(email_jogador)
 
         if email:
-            enviar_email(email_jogador, 'Recuperação Senha', f'Oi, (nome jogador)\nsua nova senha é {senha}')
+            enviar_email(email_jogador, 'Recuperação Senha', f'Oi, {email[0]}\nsua nova senha é {senha}')
             
         else:
             print('\n\t\tE-mail não cadastrado no sistema, tente novamente')

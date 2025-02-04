@@ -50,8 +50,9 @@ def login():
     with sqlite3.connect('jogo_forca.db') as conecta:
 
         login = checar(cpf, senha)
+
         if login:
-            menu_jogador.menu_jogador()
+            menu_jogador.menu_jogador(login)
         else:
             print('CPF ou senha incorretos, tente novamente')
             return

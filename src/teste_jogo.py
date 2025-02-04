@@ -20,7 +20,7 @@ def jogando():
 
     while True:
         
-        print('\n\t------------------ Jogo da Forca -----------------')
+        print('\n\t\t------------------ Jogo da Forca -----------------')
         print('\t\tDica: NENHUMA SE VIRA')
         print(palavra_tracejada(palavra_atual))    
         print(f'\t\tTentativas: {tentativas_atuais} / Tentativas Totais: {tentativas_totais}')
