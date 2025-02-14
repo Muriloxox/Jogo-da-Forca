@@ -66,6 +66,7 @@ Execute o programa e selecione uma das opções do menu principal:
 
 - O jogo pode apresentar instabilidade no reconhecimento de voz, então fale pausadamente e próximo ao microfone.
 
+## Contribuição Principal
 <p align="center">
 	
 |                        **COLABORADORES**                       |                      **FUNÇÃO**                 |
