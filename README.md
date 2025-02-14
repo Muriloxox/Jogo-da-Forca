@@ -66,6 +66,15 @@ Execute o programa e selecione uma das opções do menu principal:
 
 - O jogo pode apresentar instabilidade no reconhecimento de voz, então fale pausadamente e próximo ao microfone.
 
+<p align="center">
+	
+|                        **COLABORADORES**                       |                      **FUNÇÃO**                 |
+| :------------------------------------------------------------- | ----------------------------------------------: |
+| [**Murilo Quartezani**](https://github.com/Muriloxox)          | Programação, Documentação e Organização         |                 
+| **Anna Julia Bonadiman**                                       | Programação e Organização                       |
+| **Luiz Felipe Kretli**                                         | Programação e Organização                       |
+</p>
+
 ## Licença
 
 Este projeto é de uso acadêmico e não possui uma licença específica.
