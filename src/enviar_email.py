@@ -1,4 +1,4 @@
-#teste email
+#Anna Julia  Cajado Bonadiman | Murilo Oliveira Quartezani | Luiz Felipe Kretli
 import sqlite3
 import smtplib
 from email.mime.multipart import MIMEMultipart
@@ -10,14 +10,14 @@ def enviar_email (destinatario, assunto, mensagem):
     smtp_server = 'smtp.gmail.com'
     smtp_port = 587
     remetente = 'natsuya654@gmail.com'
-    senha = 'ppge astx nubf rgvo'
+    senha = ''
 
     msg = MIMEMultipart()
     msg['From'] = remetente
     msg['To'] = destinatario
     msg['Subject'] = assunto
 
-    msg.attach(MIMEText(mensagem, 'plain')) #formato
+    msg.attach(MIMEText(mensagem, 'plain')) 
 
     try:
         #conexao com o server
@@ -44,12 +44,13 @@ def senha():
     email_jogador = input('\n\t\tDigite o e-mail cadastrado: ')
 
     with sqlite3.connect('jogo_forca.db') as conecta:
+        cursor = conecta.cursor()
         
         email = checar_email(email_jogador)
 
         if email:
-            enviar_email(email_jogador, 'Recuperação Senha', f'Oi, {email[0]}\nsua nova senha é {senha}')
-            
+            cursor.execute("UPDATE usuarios SET senha = ? WHERE email = ?", (senha, email_jogador))
+            enviar_email(email_jogador, 'Recuperação Senha', f'Oi, {email[0]}\nsua nova senha é {senha}') 
         else:
             print('\n\t\tE-mail não cadastrado no sistema, tente novamente')
 
